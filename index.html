@@ -1,63 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Test Title</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.tailwindcss.com;">
-    <link rel="stylesheet" href="./public/output.css"> 
-<!-- Include TailwindCSS from CDN -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-<!-- Include HTMX from CDN -->
-    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
-<!-- Hide tab content by default until loaded in by HTMX -->
-    <style>
-        #tab1-content, #tab2-content, #tab3-content {
-        display: none;
-        }
-    </style>
-<!--    <link rel="icon" href="./favicon.ico" type="image/x-icon">-->
-  </head>
-  <body class="bg-gray-100 text-gray-800">
-    <main>
-        <h1>Test Heading</h1>  
-    </main>
-<!-- Tabs area -->
-    <div class="max-w-3x1 mx-auto p-6">
-        <div class="flex justify-center space-x-4 mb-6">
-            <button
-                hx-get="index.html #tab1-content"
-                hx-target=""
-                hx-swap=""
-                role=""
-                class=""
-            >
-                Tab 1
-            </button>
-        </div>
-<!-- Content area -->
-        <div id="tab-content" role="tabpanel" class="bg-white p-6 rounded shadow">
-             <p class="text-gray-600">Select a tab to view content.</p>
-         </div>
-<!-- Hidden tab content -->
-         <div id="tab1-content">
-            <div id="tab-content" class="bg-white p-6 rounded shadow">
-                <h2 class="text-xl font-semibold mb-4">Tab 1 Content</h2>
-                <p>This is the content for Tab 1.</p>
-            </div>
-        </div>
-        <div id="tab2-content">
-            <div id="tab-content" class="bg-white p-6 rounded shadow">
-                <h2 class="text-xl font-semibold mb-4">Tab 2 Content</h2>
-                <p>This is the content for Tab 2.</p>
-            </div>
-        </div>
-        <div id="tab3-content">
-            <div id="tab-content" class="bg-white p-6 rounded shadow">
-                <h2 class="text-xl font-semibold mb-4">Tab 3 Content</h2>
-                <p>This is the content for Tab 3.</p>
-            </div>
-        </div>
-    </div>
-  </body>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>test title</title>
+</head>
+<body>
+    <h1 class="text-red-600">
+        test header
+    </h1>
+</body>
 </html>
