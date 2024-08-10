@@ -28,9 +28,9 @@
 
 <!-- Tabs, "Navbar" -->
     <div role="tablist">
-        <button hx-get="#template1" hx-target="#tab-content" role="tab">Tab 1</button>
-        <button hx-get="#template2" hx-target="#tab-content" role="tab">Tab 2</button>
-        <button hx-get="#template3" hx-target="#tab-content" role="tab">Tab 3</button>
+        <button hx-get="#template1" hx-target="#tab-content" hx-trigger="click" role="tab">Tab 1</button>
+        <button hx-get="#template2" hx-target="#tab-content" hx-trigger="click" role="tab">Tab 2</button>
+        <button hx-get="#template3" hx-target="#tab-content" hx-trigger="click" role="tab">Tab 3</button>
     </div>
 
 <!-- Tab content to be replaced by HTMX from templates -->    
@@ -39,7 +39,7 @@
     </div>
 
 <!-- TEMPLATES -->
-    <div style="display: none">
+    <div style="display:none">
         <div id="template1">
             <h2>Tab 1 content</h2>
             <p>this is the content, look.</p>
