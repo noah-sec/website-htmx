@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placeholder title</title>
+</head>
+<body>
+
+    <!-- TAB 1 -->
+    <div style="display:none">
+        <div id="tab1" role="tablist">
+            <button hx-get="src/tab1 #tab1" class="selected" role="tab" aria-selected="true" aria-controls="tab-content">Tab 1</button>
+            <button hx-get="src/tab2 #tab2" role="tab" aria-selected="false" aria-controls="tab-content">Tab 2</button>
+            <button hx-get="src/tab3 #tab3" role="tab" aria-selected="false" aria-controls="tab-content">Tab 3</button>
+        </div>
+        <div id="tab-content" role="tabpanel">
+            <h2>Tab 1 content</h2>
+            <p>this is the content, look.</p>
+        </div>
+    </div>
+
+</body>
+</html>
