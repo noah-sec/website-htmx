@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Add Google fonts: Ubuntu -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+<!-- HTMX -->
     <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+<!-- Hyperscript -->
     <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+<!-- CSS Scope Inline -->
     <script src="https://cdn.jsdelivr.net/gh/gnat/css-scope-inline@main/script.js"></script>
+<!-- Surreal JS -->
     <script src="https://cdn.jsdelivr.net/gh/gnat/surreal@main/surreal.js"></script>
     <title>test title</title>
 </head>
@@ -20,11 +26,11 @@
         test <span style="font-weight: 700">header</span>
     </h1>
 
-<!-- Tabs, "navbar" -->
+<!-- Tabs, "Navbar" -->
     <div role="tablist">
-        <button hx-get="#tab1-content" hx-target="#tab-content" hx-swap="outerHTML" role="tab">Tab 1</button>
-        <button hx-get="#tab2-content" hx-target="#tab-content" hx-swap="outerHTML" role="tab">Tab 2</button>
-        <button hx-get="#tab3-content" hx-target="#tab-content" hx-swap="outerHTML" role="tab">Tab 3</button>
+        <button hx-get="#template1" hx-target="#tab-content" role="tab">Tab 1</button>
+        <button hx-get="#template2" hx-target="#tab-content" role="tab">Tab 2</button>
+        <button hx-get="#template3" hx-target="#tab-content" role="tab">Tab 3</button>
     </div>
 
 <!-- Tab content to be replaced by HTMX from templates -->    
@@ -33,11 +39,9 @@
     </div>
 
 <!-- TEMPLATES -->
-    <template id="tab1-content">
-        <div id="tab-content">
+    <template id="template1">
             <h2>Tab 1 content</h2>
             <p>this is the content, look.</p>
-        </div>
     </template>
 </body>
 </html>
