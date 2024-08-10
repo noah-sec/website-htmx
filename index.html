@@ -9,11 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gnat/css-scope-inline@main/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gnat/surreal@main/surreal.js"></script>
     <title>test title</title>
 </head>
 <body class="bg-gray-100">
-    <h1 class="text-red-600 text-lg" style="font-family: 'Ubuntu', serif;">
+
+    <h1 class="text-red-600 text-xl" style="font-family: 'Ubuntu', serif;">
         test <span style="font-weight: 700">header</span>
     </h1>
+
+<!-- Tabs, "navbar" -->
+    <div role="tablist">
+        <button hx-get="#tab1-content" hx-target="#tab-content" hx-swap="outerHTML" role="tab">Tab 1</button>
+        <button hx-get="#tab2-content" hx-target="#tab-content" hx-swap="outerHTML" role="tab">Tab 2</button>
+        <button hx-get="#tab3-content" hx-target="#tab-content" hx-swap="outerHTML" role="tab">Tab 3</button>
+    </div>
+
+<!-- Tab content to be replaced by HTMX from templates -->    
+    <div id="tab-content" role="tabpanel">
+        <p>test content for no tab selected</p>
+    </div>
+
+<!-- TEMPLATES -->
+    <template id="tab1-content">
+        <div id="tab-content">
+            <h2>Tab 1 content</h2>
+            <p>this is the content, look.</p>
+        </div>
+    </template>
 </body>
 </html>
