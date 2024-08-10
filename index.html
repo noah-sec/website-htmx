@@ -20,10 +20,10 @@
     <script src="https://cdn.jsdelivr.net/gh/gnat/surreal@main/surreal.js"></script>-->
     <title>test title</title>
 </head>
-<body class="bg-gray-900 font-mono">
+<body class="bg-gray-800 font-mono">
 
     <div class="flex h-full">
-        <div class="flex-col w-64 mt-4 mb-4 ml-4 mr-2 p-4 border-2 border-gray-500 bg-gray-700 shadow-lg rounded-lg">
+        <div class="flex-col w-64 mt-4 mb-4 ml-4 mr-2 p-4 border-2 border-gray-700 bg-gray-600 shadow-lg rounded-lg">
             <nav>
                 <div id="tab1-button">
                     <button hx-get="./src/tab1 #tab1" hx-target="#main-content" class="w-full bg-red-950 text-white py-2 px-3 rounded-lg">Button Title</button>
@@ -43,39 +43,10 @@
             </nav>
         </div>
 
-        <div id="main-content" class="w-full mt-4 mb-4 ml-2 mr-4 p-4 border-2 border-gray-500 bg-gray-700 shadow-lg rounded-lg">
+        <div id="main-content" class="w-full mt-4 mb-4 ml-2 mr-4 p-4 border-2 border-gray-700 bg-gray-600 shadow-lg rounded-lg">
             <p>base content main area</p>
         </div>
     </div>
 
 </body>
 </html>
-
-
-
-
-
-
-<!--<div class="flex">
-        <nav class="w-64 bg-white p-4 shadow-md">
-            <ul>
-                 Dropdown Menu 1 
-                <li>
-                    <button class="w-full text-left p-2 hover:bg-gray-200" hx-get="#dropdown1" hx-target="#dropdown1" hx-trigger="click" hx-swap="innerHTML">
-                        Category 1
-                    </button>
-                    <ul id="dropdown1" class="dropdown-menu">
-                        <li><a href="#" class="block p-2 hover:bg-gray-100 active-item" hx-get="/content1" hx-target="#main-content">Item 1</a></li>
-                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content2" hx-target="#main-content">Item 2</a></li>
-                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content3" hx-target="#main-content">Item 3</a></li>
-                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content4" hx-target="#main-content">Item 4</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        Main Content Area 
-        <div id="main-content" class="flex-1 p-4">
-            <p>Select an item to load content here.</p>
-        </div>
-    </div>-->
