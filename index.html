@@ -22,16 +22,30 @@
 </head>
 <body class="bg-gray-400">
 
-    <div>
-        <nav>
-            <div>
-                <button hx-get="./src/tab1" hx-target="#main-content">Button Title</button>
-            </div>
-        </nav>
-    </div>
+    <div class="flex">
+        <div class="flex-col">
+            <nav>
+                <div>
+                    <button hx-get="./src/tab1 #tab1" hx-target="#main-content" class="bg-red-950 text-white py-2 px-3 my-5 rounded-lg">Button Title</button>
+                </div>
+                <div>
+                    <button hx-get="./src/tab2" hx-target="#main-content">Button Title 2</button>
+                </div>
+                <div>
+                    <button hx-get="./src/tab3" hx-target="#main-content">Button Title 3</button>
+                </div>
+                <div>
+                    <button hx-get="./src/tab4" hx-target="#main-content">Button Title 4</button>
+                </div>
+                <div>
+                    <button hx-get="./src/tab5" hx-target="#main-content">Button Title 5</button>
+                </div>
+            </nav>
+        </div>
 
-    <div id="main-content">
-        <p>base content main area</p>
+        <div id="main-content">
+            <p>base content main area</p>
+        </div>
     </div>
 
 </body>
