@@ -22,9 +22,9 @@
 </head>
 <body class="bg-gray-400">
 
-    <div class="flex p-4">
-        <div class="flex-col p-4">
-            <nav class="w-64 h-full p-4 bg-gray-600 shadow-md rounded-lg">
+    <div class="flex p-4 h-full">
+        <div class="flex-col w-64 p-4 bg-gray-600 shadow-md rounded-lg">
+            <nav>
                 <div id="tab1-button">
                     <button hx-get="./src/tab1 #tab1" hx-target="#main-content" class="w-full bg-red-950 text-white py-2 px-3 my-5 rounded-lg">Button Title</button>
                 </div>
@@ -43,7 +43,7 @@
             </nav>
         </div>
 
-        <div id="main-content" class="w-full h-full p-4 bg-gray-600 shadow-md rounded-lg">
+        <div id="main-content" class="w-full  p-4 bg-gray-600 shadow-md rounded-lg">
             <p>base content main area</p>
         </div>
     </div>
