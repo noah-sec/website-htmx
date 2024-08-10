@@ -25,10 +25,10 @@
     <div class="flex">
         <div class="flex-col">
             <nav class="w-64 p-4 bg-gray-600 shadow-md rounded-lg">
-                <div>
-                    <button id="tab1-button" hx-get="./src/tab1 #tab1" hx-target="#main-content" class="w-full bg-red-950 text-white py-2 px-3 my-5 rounded-lg">Button Title</button>
+                <div id="tab1-button">
+                    <button hx-get="./src/tab1 #tab1" hx-target="#main-content" class="w-full bg-red-950 text-white py-2 px-3 my-5 rounded-lg">Button Title</button>
                 </div>
-                <div>
+                <div id="tab2-button">
                     <button hx-get="./src/tab2" hx-target="#main-content">Button Title 2</button>
                 </div>
                 <div>
@@ -43,7 +43,7 @@
             </nav>
         </div>
 
-        <div id="main-content">
+        <div id="main-content" class="w-full p-4 bg-gray-600 shadow-md rounded-lg">
             <p>base content main area</p>
         </div>
     </div>
