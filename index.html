@@ -22,12 +22,68 @@
 </head>
 <body class="bg-gray-400">
 
-    <h1 class="text-red-800 text-xl" style="font-family: 'Ubuntu', serif;">
-        test <span style="font-weight: 700">header</span>
-    </h1>
+    <div class="flex">
+        <nav class="w-64 bg-white p-4 shadow-md">
+            <ul>
+                <!-- Dropdown Menu 1 -->
+                <li>
+                    <button class="w-full text-left p-2 hover:bg-gray-200" hx-get="#dropdown1" hx-target="#dropdown1" hx-trigger="click" hx-swap="innerHTML">
+                        Category 1
+                    </button>
+                    <ul id="dropdown1" class="dropdown-menu">
+                        <li><a href="#" class="block p-2 hover:bg-gray-100 active-item" hx-get="/content1" hx-target="#main-content">Item 1</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content2" hx-target="#main-content">Item 2</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content3" hx-target="#main-content">Item 3</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content4" hx-target="#main-content">Item 4</a></li>
+                    </ul>
+                </li>
 
-<!-- Tabs, area to load in -->   
-    <div id="tabs" hx-get="src/tab1 #tab1" hx-trigger="load delay:100ms" hx-target="#tabs" hx-swap="innerHTML"></div>
+                <!-- Dropdown Menu 2 -->
+                <li>
+                    <button class="w-full text-left p-2 hover:bg-gray-200" hx-get="#dropdown2" hx-target="#dropdown2" hx-trigger="click" hx-swap="innerHTML">
+                        Category 2
+                    </button>
+                    <ul id="dropdown2" class="dropdown-menu">
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content5" hx-target="#main-content">Item 5</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content6" hx-target="#main-content">Item 6</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content7" hx-target="#main-content">Item 7</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content8" hx-target="#main-content">Item 8</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown Menu 3 -->
+                <li>
+                    <button class="w-full text-left p-2 hover:bg-gray-200" hx-get="#dropdown3" hx-target="#dropdown3" hx-trigger="click" hx-swap="innerHTML">
+                        Category 3
+                    </button>
+                    <ul id="dropdown3" class="dropdown-menu">
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content9" hx-target="#main-content">Item 9</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content10" hx-target="#main-content">Item 10</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content11" hx-target="#main-content">Item 11</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content12" hx-target="#main-content">Item 12</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown Menu 4 -->
+                <li>
+                    <button class="w-full text-left p-2 hover:bg-gray-200" hx-get="#dropdown4" hx-target="#dropdown4" hx-trigger="click" hx-swap="innerHTML">
+                        Category 4
+                    </button>
+                    <ul id="dropdown4" class="dropdown-menu">
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content13" hx-target="#main-content">Item 13</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content14" hx-target="#main-content">Item 14</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content15" hx-target="#main-content">Item 15</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-gray-100" hx-get="/content16" hx-target="#main-content">Item 16</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div id="main-content" class="flex-1 p-4">
+            <p>Select an item to load content here.</p>
+        </div>
+    </div>
 
 </body>
 </html>
