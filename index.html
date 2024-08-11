@@ -20,37 +20,20 @@
     <script src="https://cdn.jsdelivr.net/gh/gnat/surreal@main/surreal.js"></script>-->
     <title>test title</title>
 </head>
-<body class="bg-zinc-900 font-mono">
-
-    <div class="flex h-full">
-        <div class="flex-col w-64 mt-4 mb-4 ml-4 mr-2 p-4 border border-zinc-950 bg-gradient-to-b from-zinc-800 to-zinc-600 shadow-xl rounded-lg">
-            <div class="flex items-center justify-center w-full border border-zinc-400 text-zinc-400 rounded-md mb-1 py-2 px-3">
-                <p class="mx-auto">test</p>
+<body class="bg-zinc-900" style="font-family: 'Ubuntu', serif;">
+   
+    <!--NAVBAR - FLEX COLUMN-->
+    <div class="fixed top-0 left-0 h-screen m-0 w-fit flex flex-col">
+        <div class="rounded-lg bg-gradient-to-tr from-red-950 to-red-800 p-0.5 shadow-lg">
+            <div class="bg-zinc-900 p-3 rounded-lg">
+                <div class="relative inline-flex group">
+                    <div class="absolute transition-all duration-1000 opacity-70 inset-px bg-gradient-to-tr from-red-950 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:inset-1 group-hover:duration-200 animate-tilt">
+                    </div>
+                    <button class="relative inline-flex items-center justify-center px-8 py-4 m-2 text-xl text-white transition-all duration-200 bg-zinc-700 rounded-xl">
+                        Button 1
+                    </button>
+                </div>
             </div>
-            <nav>
-                <div id="tab1-button">
-                    <button 
-                        hx-get="./src/tab1 #tab1" 
-                        hx-target="#main-content" 
-                        class="w-full bg-gradient-to-r from-zinc-600 to-zinc-400 shadow-lg shadow-zinc-400/50 text-zinc-200 my-1 py-2 px-3 rounded-md hover:rounded-full hover:font-bold hover:from-red-900 hover:to-red-950 hover:shadow-red-900/50 transition-all ease-linear duration-200">Button Title</button>
-                </div>
-                <div id="tab2-button">
-                    <button hx-get="./src/tab2" hx-target="#main-content" class="w-full bg-gradient-to-r from-zinc-600 to-zinc-400 shadow-lg shadow-zinc-400/50 text-zinc-200 my-1 py-2 px-3 rounded-md hover:rounded-full hover:font-bold hover:from-red-900 hover:to-red-950 hover:shadow-red-900/50 transition-all ease-linear duration-200">Button Title 2</button>
-                </div>
-                <div>
-                    <button hx-get="./src/tab3" hx-target="#main-content" class="w-full bg-gradient-to-r from-zinc-600 to-zinc-400 shadow-lg shadow-zinc-400/50 text-zinc-200 my-1 py-2 px-3 rounded-md hover:rounded-full hover:font-bold hover:from-red-900 hover:to-red-950 hover:shadow-red-900/50 transition-all ease-linear duration-200">Button Title 3</button>
-                </div>
-                <div>
-                    <button hx-get="./src/tab4" hx-target="#main-content" class="w-full bg-gradient-to-r from-zinc-600 to-zinc-400 shadow-lg shadow-zinc-400/50 text-zinc-200 my-1 py-2 px-3 rounded-md hover:rounded-full hover:font-bold hover:from-red-900 hover:to-red-950 hover:shadow-red-900/50 transition-all ease-linear duration-200">Button Title 4</button>
-                </div>
-                <div>
-                    <button hx-get="./src/tab5" hx-target="#main-content" class="w-full bg-gradient-to-r from-zinc-600 to-zinc-400 shadow-lg shadow-zinc-400/50 text-zinc-200 my-1 py-2 px-3 rounded-md hover:rounded-full hover:font-bold hover:from-red-900 hover:to-red-950 hover:shadow-red-900/50 transition-all ease-linear duration-200">Button Title 5</button>
-                </div>
-            </nav>
-        </div>
-
-        <div id="main-content" class="w-full mt-4 mb-4 ml-2 mr-4 p-4 border border-zinc-950 bg-gradient-to-b from-zinc-800 to-zinc-600 shadow-xl rounded-lg">
-            <p>base content main area</p>
         </div>
     </div>
 
