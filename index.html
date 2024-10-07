@@ -20,12 +20,13 @@
     <script src="https://cdn.jsdelivr.net/gh/gnat/surreal@main/surreal.js"></script>-->
     <title>test title</title>
 </head>
+<!--BACKGROUND COLOR AND FONT-->
 <body class="bg-zinc-900" style="font-family: 'Nunito', system-ui; font-optical-sizing: auto; font-weight: 300; font-style: normal;">
     <!--FLEX NAVBAR LEFT AND CONTENT RIGHT-->
     <div class="flex flex-row">
 
-        <!--NAVBAR - FLEX COLUMN fixed top-0 left-0-->
-        <div class="min-h-content max-h-screen m-0 w-fit flex items-center flex-col"> 
+        <!--NAVBAR - FLEX COLUMN ; old: {fixed top-0 left-0}-->
+        <div class="min-h-screen max-h-content m-0 w-fit flex items-center flex-col"> 
 
             <!--PROFILE CARD-->
             <div class="text-center p-5">
@@ -35,9 +36,9 @@
                 <h1 class="text-zinc-200 font-bold text-2xl">
                     Noah Grayson
                 </h1>
-                <p class="text-zinc-400">
+                <span class="text-zinc-400">
                     Graduate Student
-                </p>
+                </span>
             </div>
 
             <!--BUTTON-->
@@ -86,10 +87,10 @@
                     Button 9
                 </button>               
             </div>
-            <div class="group">
-                <button class="items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
-                    Button 10
-                </button>               
+            <div class="rounded-lg bg-zinc-700">
+                <a class="items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg" href="">
+                    <span class="">Button 10</span>
+                </a>              
             </div>
         </div>
 
