@@ -17,15 +17,15 @@
 <!--BACKGROUND COLOR AND FONT-->
 <body class="bg-zinc-900" style="font-family: 'Nunito', system-ui; font-optical-sizing: auto; font-weight: 300; font-style: normal;">
     <!--FLEX ROW-->
-    <div class="flex flex-row">
+    <div class="flex flex-col lg:flex-row">
         <!--NAVBAR-->
-        <div class="min-h-screen max-h-content m-0 p-5 w-fit flex flex-col"> 
-            <!--PROFILE CARD-->
-            <div class="text-center pb-5">
+        <div class="max-h-content m-0 p-5 w-fit flex flex-col"> 
+            <!--PROFILE CARD - DESKTOP-->
+            <div class="text-center pb-5 hidden lg:block">
                 <div class="w-fit mx-auto rounded-full mb-1 bg-gradient-to-tr from-red-950 to-red-700 p-0.5 shadow-lg">
                     <img class="w-32 h-32 m-auto rounded-full" src="./images/author.jpg" alt="">
                 </div>  
-                <h1 class="text-zinc-200 font-bold text-2xl">Noah Grayson</h1>
+                <h1 class="text-white font-bold text-2xl">Noah Grayson</h1>
                 <div class="flex flex-col text-center">
                     <span class="text-zinc-400 text-sm">Graduate Student</span>
                     <span class="text-zinc-400 text-sm">Security Engineer</span>
@@ -34,43 +34,51 @@
             </div>
             <!--BUTTONS - DESKTOP-->
             <div class="hidden lg:block">
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 mb-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">About</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Accomplishments</span></div></a>              
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Education</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Certifications</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Experience</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Home Labs</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Projects</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Presentations</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Writing</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Training</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Honors & Awards</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Competitions</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Organizations</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Research Areas</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Resume & CV</span></div></a>
-            </div>     
-            <!--BUTTONS - MOBILE--> 
-            <div class="block lg:hidden">
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 mb-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">About</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Accomplishments</span></div></a>              
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Education</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Certifications</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Experience</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Home Labs</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Projects</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Presentations</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Writing</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Training</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Honors & Awards</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Competitions</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Organizations</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Research Areas</span></div></a>
-                <a href=""><div class="group rounded-lg border border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Resume & CV</span></div></a>
-            </div>        
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 mb-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">About</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Accomplishments</span></div></a>              
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Education</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Certifications</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Experience</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Home Labs</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Projects</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Presentations</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Writing</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Training</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Honors & Awards</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Competitions</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Organizations</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Research Areas</span></div></a>
+                <a href=""><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Resume & CV</span></div></a>
+            </div>      
         </div>
 
-        <!-- MAIN CONTAINER FOR CONTENT FLEX DIV CONTAINERS-->
+        <!--BUTTONS - MOBILE--> 
+        <div class="flex lg:hidden">
+            <div class="relative inline-block text-left">
+                <button class="px-5 py-2 bg-red-950 text-white rounded-lg shadow focus:bg-white focus:text-red-950 outline-none" onclick="toggleDropdown('dropdownMenu')">
+                    Noah Grayson
+                </button>
+                <div class="hidden origin-bottom absolute mt-2 left-0 w-fit rounded-lg shadow bg-gray-700 animate-fadeIn" id="dropdownMenu">    
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">About</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Accomplishments</a>              
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Education</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Certifications</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Experience</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Home Labs</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Projects</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Presentations</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Writing</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Training</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Honors & Awards</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Competitions</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Organizations</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Research Areas</a>
+                    <a href="" class="block px-4 py-2 text-sm text-zinc-400">Resume & CV</a>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTENT-->
         <div class="flex flex-1 flex-col pt-5 pr-5">
             <!-- FLEX CONTAINER FOR MAIN CONTENT-->
             <div class="rounded-lg bg-zinc-700 px-5 py-2 mb-1">
@@ -83,5 +91,33 @@
             </div>
         </div>
     </div>
+
+
+    <!--STYLE FOR DROPDOWN MENU-->
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+    <!--SCRIPT FOR DROPDOWN MENU-->
+    <script>
+        function toggleDropdown(menuId) {
+            const dropdownMenu = document
+            .getElementById(menuId);
+            dropdownMenu.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html> 
