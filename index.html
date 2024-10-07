@@ -7,7 +7,7 @@
 <!-- Add Google fonts: Ubuntu -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 <!-- HTMX -->
@@ -20,29 +20,88 @@
     <script src="https://cdn.jsdelivr.net/gh/gnat/surreal@main/surreal.js"></script>-->
     <title>test title</title>
 </head>
-<body class="bg-zinc-900" style="font-family: 'Ubuntu', serif;">
+<body class="bg-zinc-900" style="font-family: 'Nunito', system-ui; font-optical-sizing: auto; font-weight: 300; font-style: normal;">
    
     <!--NAVBAR - FLEX COLUMN-->
-    <div class="fixed top-0 left-0 h-screen m-0 w-fit flex items-center flex-col">   
+    <div class="fixed top-0 left-0 min-h-content max-h-screen m-0 w-fit flex flex-initial items-center flex-col">   
         <!--PROFILE CARD-->
         <div class="text-center p-5">
-            <div class="w-fit rounded-full mb-1 bg-gradient-to-tr from-red-950 to-red-700 p-0.5 shadow-lg">
+            <!--<div class="w-fit rounded-full mb-1 bg-gradient-to-tr from-red-950 to-red-700 p-0.5 shadow-lg">
                 <img class="w-32 h-32 m-auto rounded-full" src="./images/author.jpg" alt="">
-            </div>    
-            <h1 class="text-zinc-200 font-bold text-lg">
-                Noah
+            </div>-->    
+            <h1 class="text-zinc-200 font-bold text-2xl">
+                Noah Grayson
             </h1>
             <p class="text-zinc-400">
-                Security Engineer
+                Graduate Student
             </p>
         </div>
         <!--GRADIENT SHADOW BUTTON-->
         <div class="relative inline-flex group">
-            <div class="absolute transition-all duration-1000 opacity-30 inset-px bg-gradient-to-tr from-red-950 to-red-700 rounded-xl blur-lg group-hover:opacity-100 group-hover:inset-1 group-hover:duration-200 animate-tilt">
-            </div>
-            <button class="relative inline-flex items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg transition-all duration-200 bg-zinc-900 group-hover:bg-gradient-to-tr group-hover:from-red-950 group-hover:to-red-700 group-hover:text-zinc-200 rounded-xl">
+            <button class="relative inline-flex items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
                  Button 1
             </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
+                 Test button longer
+            </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="relative inline-flex items-center justify-center py-2 mx-5 my-0.5 text-zinc-500 text-lg">
+                 Test button no padding
+            </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="relative inline-flex items-center justify-center px-5 py-2 text-zinc-500 text-lg">
+                 Test button no margin
+            </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="relative inline-flex items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
+                 Button 5
+            </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="relative inline-flex items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
+                 Button 6
+            </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="relative inline-flex items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
+                 Button 7
+            </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="relative inline-flex items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
+                 Button 8
+            </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="relative inline-flex items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
+                 Button 9
+            </button>               
+        </div>
+        <div class="relative inline-flex group">
+            <button class="relative inline-flex items-center justify-center px-5 py-2 mx-5 my-0.5 text-zinc-500 text-lg">
+                 Button 10
+            </button>               
+        </div>
+    </div>
+
+    <!-- MAIN CONTAINER FOR CONTENT FLEX DIV CONTAINERS-->
+    <div class="w-fit flex-1 flex-col">
+        <!-- FLEX CONTAINER FOR MAIN CONTENT-->
+        <div class="relative inline-flex">
+            <p>
+                Test content test Test content test Test content test Test content test Test content test Test content test Test content test
+            </p>
+        </div>
+        <!-- FLEX CONTAINER FOR MAIN CONTENT-->
+        <div class="relative inline-flex">
+            <p>
+                Test content test Test content test Test content test Test content test Test content test Test content test Test content test
+            </p>
         </div>
     </div>
 
@@ -53,4 +112,8 @@
             <div class="bg-zinc-900 p-3 rounded-lg">
 
             </div>
+<div class="absolute transition-all duration-1000 opacity-30 inset-px bg-gradient-to-tr from-red-950 to-red-700 rounded-xl blur-lg group-hover:opacity-100 group-hover:inset-1 group-hover:duration-200 animate-tilt">
+            </div>
+
+transition-all duration-200 bg-zinc-900 group-hover:bg-gradient-to-tr group-hover:from-red-950 group-hover:to-red-700 group-hover:text-zinc-200 rounded-xl            
         </div>-->
