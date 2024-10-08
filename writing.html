@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Add Google fonts: Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+    <title>test title</title>
+</head>
+<!--BACKGROUND COLOR AND FONT-->
+<body class="bg-zinc-900" style="font-family: 'Nunito', system-ui; font-optical-sizing: auto; font-weight: 300; font-style: normal;">
+    <!--FLEX ROW-->
+    <div class="flex flex-col lg:flex-row">
+        <!--NAVBAR-->
+        <div class="max-h-content m-0 p-5 w-fit flex flex-col"> 
+            <!--PROFILE CARD - DESKTOP-->
+            <div class="text-center pb-5 hidden lg:block">
+                <div class="w-fit mx-auto rounded-full mb-1 bg-gradient-to-tr from-red-950 to-red-700 p-0.5 shadow-lg">
+                    <img class="w-32 h-32 m-auto rounded-full" src="./images/author.jpg" alt="">
+                </div>  
+                <h1 class="text-white font-bold text-2xl">Noah Grayson</h1>
+                <div class="flex flex-col text-center">
+                    <span class="text-zinc-400 text-sm">Graduate Student</span>
+                    <span class="text-zinc-400 text-sm">Security Engineer</span>
+                    <span class="text-zinc-400 text-sm">Security Researcher</span>
+                </div>
+            </div>
+            <!--BUTTONS - DESKTOP-->
+            <div class="hidden lg:block">
+                <a href="https://noahsec.pro/"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">About</span></div></a>
+                <a href="https://noahsec.pro/accomplishments"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Accomplishments</span></div></a>              
+                <a href="https://noahsec.pro/education"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Education</span></div></a>
+                <a href="https://noahsec.pro/certifications"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Certifications</span></div></a>
+                <a href="https://noahsec.pro/experience"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Experience</span></div></a>
+                <a href="https://noahsec.pro/homelabs"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Home Labs</span></div></a>
+                <a href="https://noahsec.pro/projects"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Projects</span></div></a>
+                <a href="https://noahsec.pro/presentations"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Presentations</span></div></a>
+                <a href="https://noahsec.pro/writing"><div class="group rounded-lg shadow text-center px-5 py-1 mb-1 bg-zinc-600"><span class="text-zinc-200 text-lg">Writing</span></div></a>
+                <a href="https://noahsec.pro/training"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Training</span></div></a>
+                <a href="https://noahsec.pro/honors"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Honors & Awards</span></div></a>
+                <a href="https://noahsec.pro/competitions"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Competitions</span></div></a>
+                <a href="https://noahsec.pro/organizations"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Organizations</span></div></a>
+                <a href="https://noahsec.pro/research"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Research Areas</span></div></a>
+                <a href="https://noahsec.pro/resume"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Resume & CV</span></div></a>
+            </div>      
+        </div>
+
+        <!--BUTTONS - MOBILE--> 
+        <div class="flex mx-auto lg:hidden">
+            <div class="relative inline-block text-left">
+                <button class="px-5 py-2 bg-red-950 text-white text-lg font-bold rounded-lg shadow focus:bg-white focus:text-red-950 outline-none" onclick="toggleDropdown('dropdownMenu')">
+                    Noah Grayson
+                </button>
+                <div class="hidden origin-bottom absolute mt-2 left-0 w-fit rounded-lg shadow-lg bg-red-950 animate-fadeIn" id="dropdownMenu">    
+                    <a href="https://noahsec.pro/" class="block px-4 py-2 text-sm text-zinc-400">About</a>
+                    <a href="https://noahsec.pro/accomplishments" class="block px-4 py-2 text-sm text-zinc-400">Accomplishments</a>              
+                    <a href="https://noahsec.pro/education" class="block px-4 py-2 text-sm text-zinc-400">Education</a>
+                    <a href="https://noahsec.pro/certifications" class="block px-4 py-2 text-sm text-zinc-400">Certifications</a>
+                    <a href="https://noahsec.pro/experience" class="block px-4 py-2 text-sm text-zinc-400">Experience</a>
+                    <a href="https://noahsec.pro/homelabs" class="block px-4 py-2 text-sm text-zinc-400">Home Labs</a>
+                    <a href="https://noahsec.pro/projects" class="block px-4 py-2 text-sm text-zinc-400">Projects</a>
+                    <a href="https://noahsec.pro/presentations" class="block px-4 py-2 text-sm text-zinc-400">Presentations</a>
+                    <a href="https://noahsec.pro/writing" class="block px-4 py-2 text-sm text-zinc-400">Writing</a>
+                    <a href="https://noahsec.pro/training" class="block px-4 py-2 text-sm text-zinc-400">Training</a>
+                    <a href="https://noahsec.pro/honors" class="block px-4 py-2 text-sm text-zinc-400">Honors & Awards</a>
+                    <a href="https://noahsec.pro/competitions" class="block px-4 py-2 text-sm text-zinc-400">Competitions</a>
+                    <a href="https://noahsec.pro/organizations" class="block px-4 py-2 text-sm text-zinc-400">Organizations</a>
+                    <a href="https://noahsec.pro/research" class="block px-4 py-2 text-sm text-zinc-400">Research Areas</a>
+                    <a href="https://noahsec.pro/resume" class="block px-4 py-2 text-sm text-zinc-400">Resume & CV</a>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTENT-->
+        <div class="flex flex-1 flex-col pt-2 px-2 lg:pr-5 lg:pl-0">
+            <!-- FLEX CONTAINER FOR MAIN CONTENT-->
+            <div class="rounded-lg bg-zinc-700 px-5 py-2 mb-1">
+                <h1 class="text-zinc-200 text-center font-bold">
+                    Writing
+                </h1>
+                <p class="text-zinc-400 text-sm">
+                    Noah is a university graduate student studying offensive information security.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--STYLE FOR DROPDOWN MENU-->
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+    <!--SCRIPT FOR DROPDOWN MENU-->
+    <script>
+        function toggleDropdown(menuId) {
+            const dropdownMenu = document
+            .getElementById(menuId);
+            dropdownMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html> 
