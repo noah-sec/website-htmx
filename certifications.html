@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-<!-- HTMX -->
-    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
     <title>Credentials | Security Portfolio</title>
 </head>
 <!--BACKGROUND COLOR AND FONT-->
@@ -35,6 +33,7 @@
             <!--BUTTONS - DESKTOP-->
             <div class="hidden lg:block">
                 <a href="https://noahsec.pro/"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">About</span></div></a>
+                <a href="https://noahsec.pro/summary"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Summary</span></div></a>
                 <a href="https://noahsec.pro/accomplishments"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Accomplishments</span></div></a>              
                 <a href="https://noahsec.pro/education"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Education</span></div></a>
                 <a href="https://noahsec.pro/certifications"><div class="group rounded-lg shadow text-center px-5 py-1 mb-1 bg-zinc-600"><span class="text-zinc-200 text-lg">Credentials</span></div></a>
@@ -61,6 +60,7 @@
                 </button>
                 <div class="hidden origin-bottom absolute mt-2 left-0 w-fit rounded-lg shadow-lg bg-red-950 animate-fadeIn" id="dropdownMenu">    
                     <a href="https://noahsec.pro/" class="block px-4 py-2 text-sm text-zinc-400">About</a>
+                    <a href="https://noahsec.pro/summary" class="block px-4 py-2 text-sm text-zinc-400">Summary</a>
                     <a href="https://noahsec.pro/accomplishments" class="block px-4 py-2 text-sm text-zinc-400">Accomplishments</a>              
                     <a href="https://noahsec.pro/education" class="block px-4 py-2 text-sm text-zinc-400">Education</a>
                     <a href="https://noahsec.pro/certifications" class="block px-4 py-2 text-sm text-zinc-400">Credentials</a>
@@ -82,7 +82,7 @@
 
         <!--CONTENT-->
         <div class="flex flex-1 flex-col pt-2 px-2 lg:pr-5 lg:pl-0">
-            <!-- FLEX CONTAINER FOR MAIN CONTENT-->
+            <!-- FLEX CONTAINER FOR CERTS -->
             <div class="rounded-lg bg-red-950 px-5 py-2 mb-2 lg:mb-4 flex flex-col items-center">
                 <div class="text-black text-center font-semibold text-2xl lg:text-7xl" style="font-family: 'Orbitron'">CERTIFICATIONS</div>
                 <div class="text-zinc-400 text-center text-lg mt-4 lg:mt-8 font-thin">Certifications in information technology and information security, usually awarded by completing a proctored exam or a practical lab assessment. Listed in order of difficulty and relevance.</div>
@@ -199,9 +199,11 @@
                     </div>     
                 </div>
             </div>
+            <!-- FLEX CONTAINER FOR APPLIED SKILLS -->
             <div class="rounded-lg bg-red-950 px-5 py-2 mb-1 flex flex-col items-center">
                 <div class="text-black text-center font-semibold text-2xl lg:text-6xl" style="font-family: 'Orbitron'">MICROSOFT APPLIED SKILLS</div>
                 <div class="text-zinc-400 text-center text-lg mt-4 lg:mt-8 font-thin">Scenario-based credentials that validate proficiency in skill sets specific to critical business problems or challenges.</div>
+                <!--APPLIED SKILLS-->
                 <div class="max-w-4xl w-full">
                     <div class="rounded-lg border border-zinc-50 mt-8 lg:mt-12 px-2 py-1 lg:px-6 lg:py-3 flex flex-col">
                         <a class="mb-4 text-2xl text-zinc-50 font-medium hover:underline hover:text-black" href="https://learn.microsoft.com/en-us/credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/">SC-5004: Defend against cyberthreats with Microsoft Defender XDR</a>
@@ -252,6 +254,7 @@
                         <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Tasks performed: </span>create and configure a Linux VM, configure monitoring and backup of Linux VMs, scale Linux VMs vertically, configure identities and roles for Linux VMs, access Azure Storage from a Linux VM</span>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 
