@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Add Google fonts: Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Noah Grayson | Activities</title>
+</head>
+<!--BACKGROUND COLOR AND FONT-->
+<body class="bg-zinc-900" style="font-family: 'Nunito', system-ui; font-optical-sizing: auto; font-weight: 300; font-style: normal;">
+    <!--FLEX ROW - NAVBAR -> CONTENT -->
+    <div class="flex flex-col lg:flex-row">
+        <!--NAVBAR-->
+        <div class="max-h-content m-0 p-5 w-fit flex flex-col"> 
+            <!--PROFILE CARD - DESKTOP-->
+            <div class="text-center pb-5 hidden lg:block">
+                <div class="w-fit mx-auto rounded-full mb-1 bg-gradient-to-tr from-red-950 to-red-700 p-0.5 shadow-lg">
+                    <img class="w-32 h-32 m-auto rounded-full" src="./images/author.jpg" alt="">
+                </div>  
+                <h1 class="text-white font-bold text-2xl">Noah Grayson</h1>
+                <div class="flex flex-col text-center items-center">
+                    <span class="text-zinc-400 text-sm mb-1">Security Engineer</span>
+                    <a href="https://linkedin.com/in/noahsec"><span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#52525b]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                          <path
+                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                        </svg>
+                      </span></a>
+                </div>
+            </div>
+            <!--BUTTONS - DESKTOP-->
+            <div class="hidden lg:block">
+                <a href="https://noahsec.pro/"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 mb-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">About</span></div></a>
+                <a href="https://noahsec.pro/skills"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Skills</span></div></a>
+                <a href="https://noahsec.pro/experience"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Experience</span></div></a>
+                <a href="https://noahsec.pro/portfolio"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Portfolio</span></div></a>
+                <a href="https://noahsec.pro/credentials"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Credentials</span></div></a>
+                <a href="https://noahsec.pro/education"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Education</span></div></a>
+                <a href="https://noahsec.pro/training"><div class="group rounded-lg border shadow border-zinc-600 text-center px-5 py-1 my-1 hover:bg-zinc-600"><span class="text-zinc-600 text-lg group-hover:text-zinc-200">Training</span></div></a>
+                <a href="https://noahsec.pro/activities"><div class="group rounded-lg shadow text-center px-5 py-1 my-1 bg-zinc-600"><span class="text-zinc-200 text-lg">Activities</span></div></a>
+            </div>      
+        </div>
+
+        <!--BUTTONS - MOBILE--> 
+        <div class="flex mx-auto lg:hidden">
+            <div class="relative inline-block text-left">
+                <button class="px-5 py-2 bg-red-950 text-white text-lg font-bold rounded-lg shadow focus:bg-white focus:text-red-950 outline-none" onclick="toggleDropdown('dropdownMenu')">
+                    Noah Grayson
+                </button>
+                <div class="hidden origin-bottom absolute mt-2 left-0 w-fit rounded-lg shadow-lg bg-red-950 animate-fadeIn" id="dropdownMenu">    
+                    <a href="https://noahsec.pro/" class="block px-4 py-2 text-sm text-zinc-400">About</a>
+                    <a href="https://noahsec.pro/skills" class="block px-4 py-2 text-sm text-zinc-400">Skills</a>
+                    <a href="https://noahsec.pro/experience" class="block px-4 py-2 text-sm text-zinc-400">Experience</a>   
+                    <a href="https://noahsec.pro/portfolio" class="block px-4 py-2 text-sm text-zinc-400">Portfolio</a> 
+                    <a href="https://noahsec.pro/credentials" class="block px-4 py-2 text-sm text-zinc-400">Credentials</a>        
+                    <a href="https://noahsec.pro/education" class="block px-4 py-2 text-sm text-zinc-400">Education</a>
+                    <a href="https://noahsec.pro/training" class="block px-4 py-2 text-sm text-zinc-400">Training</a>
+                    <a href="https://noahsec.pro/activities" class="block px-4 py-2 text-sm text-zinc-400">Activities</a>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTENT-->
+        <div class="flex flex-1 flex-col pt-2 px-2 lg:pr-5 lg:pl-0">
+            <!-- FLEX CONTAINER FOR APPLIED SKILLS -->
+            <div class="rounded-lg bg-red-950 px-5 py-2 mb-2 lg:mb-4 flex flex-col items-center">
+                <div class="text-black text-center font-semibold text-2xl lg:text-6xl" style="font-family: 'Orbitron'">Activities</div>
+                <div class="text-zinc-400 text-center text-lg mt-4 lg:mt-8 font-thin">Professional experience.</div>
+                <!--APPLIED SKILLS-->
+                <div class="max-w-4xl w-full">
+                    <div class="rounded-lg border border-zinc-50 mt-8 lg:mt-12 px-2 py-1 lg:px-6 lg:py-3 flex flex-col">
+                        <a class="mb-4 text-2xl text-zinc-50 font-medium hover:underline hover:text-black" href="">Activity 1</a>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Provider: </span></span>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Exam format: </span></span>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Key skills: </span></span>
+                    </div>    
+                </div>
+                <div class="max-w-4xl w-full">
+                    <div class="rounded-lg border border-zinc-50 mt-8 px-2 py-1 lg:px-6 lg:py-3 flex flex-col">
+                        <a class="mb-4 text-2xl text-zinc-50 font-medium hover:underline hover:text-black" href="">Activity 2</a>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Provider: </span></span>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Exam format: </span></span>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Key skills: </span></span>
+                    </div>    
+                </div>
+                <div class="max-w-4xl w-full">
+                    <div class="rounded-lg border border-zinc-50 mt-8 px-2 py-1 lg:px-6 lg:py-3 flex flex-col">
+                        <a class="mb-4 text-2xl text-zinc-50 font-medium hover:underline hover:text-black" href="">Activity 3</a>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Provider: </span></span>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Exam format: </span></span>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Key skills: </span></span>
+                    </div>    
+                </div>
+                <div class="max-w-4xl w-full">
+                    <div class="rounded-lg border border-zinc-50 mt-8 px-2 py-1 lg:px-6 lg:py-3 flex flex-col">
+                        <a class="mb-4 text-2xl text-zinc-50 font-medium hover:underline hover:text-black" href="">Activity 4</a>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Provider: </span></span>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Exam format: </span></span>
+                        <span class="text-lg text-zinc-400 font-thin"><span class="text-zinc-300 font-light">Key skills: </span></span>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--STYLE FOR DROPDOWN MENU-->
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+    <!--SCRIPT FOR DROPDOWN MENU-->
+    <script>
+        function toggleDropdown(menuId) {
+            const dropdownMenu = document
+            .getElementById(menuId);
+            dropdownMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html> 
